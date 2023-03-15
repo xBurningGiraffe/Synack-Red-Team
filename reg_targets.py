@@ -14,7 +14,6 @@ if unreg_targets:
     reg_payload = {
         "text": f"Newly registered targets: {registered_targets}"
     }
-    h.db.slack_url = 'https://hooks.slack.com/services/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'
     h.alerts.slack(reg_payload)
 else:
     print(f"No unregistered targets found")

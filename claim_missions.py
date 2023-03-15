@@ -21,7 +21,6 @@ while True:
         for m in missions:
             time.sleep(1)
             outcome = h.missions.set_claimed(m)
-            h.db.slack_url = 'https://hooks.slack.com/services/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'
             payload = {
                 "text": "New missions claimed: {outcome}"
             }
